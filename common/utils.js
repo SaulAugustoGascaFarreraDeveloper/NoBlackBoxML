@@ -16,6 +16,26 @@ utils.formatPercent=(n)=>{
  }
 
 
+ utils.groupBy = (objarray,key)=>{
+   const groups = {}
+
+   for(let obj of objarray)
+   {
+      const val = obj[key]
+
+      if(groups[val] == null)
+      {
+         groups[val]=[]
+      }
+
+      groups[val].push(obj)
+   }
+
+   return groups;
+
+ }
+
+
 
 if(typeof module !== 'undefined')
 {

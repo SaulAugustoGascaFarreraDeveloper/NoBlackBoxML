@@ -45,6 +45,8 @@ fileNames.forEach(fn => {
 
         utils.printProgress(id,fileNames.length*8)
 
+       
+
         id++;
     }
 });
